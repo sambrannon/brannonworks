@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	margin:0;
+	background-color:#f3f3f3;
+	background-image:url(images/bgimage02.jpg);
+	background-position:top center;
+	background-repeat:no-repeat;
+	overflow:scroll;
+	background-attachment:fixed;	
+}
+a{
+	outline-style:none;
+	outline-width:0;
+}
+
+
+/**HEADER**/
+#headerexpand{
+	width:100%;
+	height:40px;
+	margin:0 0 26px 0;
+	background-color:#333;
+	border-bottom:1px solid #000;
+	position: fixed;
+	z-index:5000;
+	box-shadow: 0 0 10px #333;
+	-moz-box-shadow: 0 0 10px #333;
+	-webkit-box-shadow: 0 0 10px #333;
+}
+#header{
+	width:960px;
+	height:40px;
+	background-color:#333;
+	margin:0 auto;
+}
+#logo{
+	float:left;
+	width:187px;
+	height:40px;
+	margin:0 50px 0 0;/*creates the space between logo and 1st button*/
+}
+ul#navlist{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+#navlist li{
+	height:40px;
+	margin:0;
+	padding:8px 20px 0 20px;
+	float:left;
+}
+li#buttonlast{
+	height:40px;
+	margin:0;
+	padding:8px 0px 0 20px;
+	float:right;
+}
+#navlist li{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#999;
+	font-size:18px;
+}
+#navlist li.cur a:link{
+	text-decoration:none;
+	color:#fff;
+}
+#navlist li.cur a:visited{
+	text-decoration:none;
+	color:#fff;
+}
+#navlist li.cur a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+#navlist li.cur a:active{
+	text-decoration:none;
+	color:#fff;
+}
+#navlist li a:link{
+	text-decoration:none;
+	color:#999;
+}
+#navlist li a:visited{
+	text-decoration:none;
+	color:#999;
+}
+#navlist li a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+#navlist li a:active{
+	text-decoration:none;
+	color:#fff;
+}
+
+
+
+
+/**CONTENT**/
+#contentwrapper{
+	width:910px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	margin:0 auto;
+	padding:25px;
+}
+#projectnav{
+	width:150px;
+	height:500px;
+	margin:0 25px 0 0;
+	float:left;
+	background-color:#fff;	
+}
+#projectwindow{
+	width:735px;
+	height:500px;
+	float:left;
+	background-color:#fff;
+	display:inline-block;
+}
+#projectwindow img{
+	margin:0 15px 15px 0;
+	padding:0;
+	float:left;
+}
+p.projtitle{
+	font-family: Century Gothic, Trebuchet MS, Verdana, Helvetica, Arial, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color:#3d3d3d;
+	margin:0 0 30px 0;
+}
+p.projtitle a{
+	text-decoration:underline;
+	color:#3d3d3d;
+}
+p.infotext{
+	font-family:"Palatino Linotype", Georgia, "Times New Roman", Times, serif, "Book Antiqua", Palatino, serif;
+	font-size:14px;
+	color:#3d3d3d;
+}
+p.infotext a:link{
+	color:#3d3d3d
+}
+p.infotext a:visited{
+	color:#3d3d3d
+}
+h1.indextitle{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:910px;
+	text-align:center;
+	font-size:18px;
+	color:#3d3d3d;
+	margin:0 0 20px 0;
+	clear:both;
+}
+#contentwrapper p.title{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:24px;
+	color:#666;
+	margin:0 0 15px 0px;
+	padding:0;
+	clear:both;
+}
+#contentwrapper p.titlesub{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:24px;
+	color:#666;
+	margin:0 0 15px 15px;
+	padding:0;
+	clear:both;
+}
+#slideshow img{
+	border:1px solid #666;
+}
+.projectwrapper{
+	width:910px;
+	margin:0;
+	clear:both;
+}
+.projectimg{
+	width:350px;
+	margin:0 0 50px 0;
+	float:left;
+}
+.viewpics{ /*had to make h1, <a> wouldnt format right*/
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#3d3d3d;
+	font-size:14px;
+	margin:2px 0 0 0;
+	text-align:left;
+}
+.viewpics a:link, a:visited, a:hover, a:active{
+	text-decoration:underline;
+	color:#3d3d3d;
+}
+.description{
+	width:535px;
+	float:left;
+	margin:0 0 50px 25px;/*bottom is 25px so the next proj gets spaced apart*/
+	padding:0;
+}
+.description p{
+	margin:0;
+	padding:0;
+}
+img.thumb{
+	margin:13px;
+	padding:0;
+	border:solid 1px #999;
+}
+a.back{
+	clear:both;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#333;
+	display:block;
+	margin:0 0 15px 20px;
+}
+/**FOOTER**/
+#footer{
+	border-top:thin gray;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-align:center;
+	color:#666;
+	width:960px;
+	height:20px;
+	margin:10px auto 50px auto;
+	clear:both;
+}
+#footer a:link{
+	text-decoration:none;
+	color:#666;
+}
+#footer a:visited{
+	text-decoration:none;
+	color:#666;
+}
+#footer a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+#footer a:active{
+	text-decoration:none;
+	color:#006;
+}
+
