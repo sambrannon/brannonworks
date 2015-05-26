@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BrannonWorks</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/brannonworksicon.png"/>
+<meta name="description" content="Brannonworks is a collection of work created by Sam Brannon"/>
+<meta name="keywords" content="architecture, photography, microcosm, brannon, scale, wall, uwm, sarup, paris, toronto, milwaukee, chicago"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+<script type="text/javascript" src="shadowbox/shadowboxconfig.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19739952-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow A.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow A:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow A:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    //var $sibs  = $active.siblings();
+    //var rndNum = Math.floor(Math.random() * $sibs.length );
+    //var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 400, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+<style type="text/css">/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:460px;
+	width:100%;
+}
+
+#slideshow A {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow A.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow A.last-active {
+    z-index:9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="headerexpand">
+	<div id="header"> 
+    	<div id="logo">
+        	<a href="index.php.html"><img src="images/logo3.png" width="187" height="40" border="0" alt="brannonworks logo"/></a>
+    </div>
+        <ul id="navlist">
+            <li> <a href="arch.php.html">architecture</a></li>
+            <li> <a href="photo.php.html">photography</a></li>
+            <li><a href="webdesign.php.html">web design</a></li>
+            <!--<li><a href="http://www.brannonworks.com/blog/index.php" target="_blank">blog</a></li>-->
+            <li id="buttonlast"><a href="about.php.html">about</a></li>
+        </ul>
+    </div>
+</div>
+<div style="clear:both;height:60px;"><!-- to offset the fixed navigation --></div>
+<div id="contentwrapper">
+	<p class="title">photography</p>
+    
+    <div class="projectwrapper">
+    	<div class="projectimg"> <a href="la.php.html"><img src="images/projecticons/la-clip.jpg" alt="source: http://sethandray.files.wordpress.com/2008/05/jlm-stars-hollywood-sign.jpg" width="350" height="150" border="0"/></a>
+        <p class="viewpics"><a href="http://brannonworks.com/la.html">photo gallery</a></p>
+  </div>    
+        <div class="description">	
+            <p class="projtitle"><a href="la.php.html">Los Angeles</a></p>
+            <p class="infotext">
+              Los angeles has a population of almost 10 million people. That's 7.5 million more than Chicago, and nearly 9 million more than my humble town of Milwaukee. Throughout my stay I was fortunate enough to experience the hustle and bustle of Los Angeles, as well as the calm, meditative escape of Wine country in Temecula. <br />What Los Angeles lacks in building height and number of snow flakes, it more than makes up for in its beautiful weather, scenery, and people. All of which are some of the nicest I'll ever experience.</p>
+        </div>
+    </div>
+    
+    <div class="projectwrapper">
+    	<div class="projectimg"> <a href="midwest.php.html"><img src="images/projecticons/milchi-clip.jpg" alt="chicago bean" width="350" height="150" border="0"/></a>
+        <p class="viewpics"><a href="http://brannonworks.com/midwest.html">photo gallery</a></p>
+  </div>    
+        <div class="description">	
+            <p class="projtitle"><a href="midwest.php.html">Midwest</a></p>
+            <p class="infotext">
+              The Midwest is quite a remarkable place. Its snowy and frigid winters complimented with its sunny and warm summers give this region a year round photographic appeal. <br/><br/>
+              The following set contains images primarily from Milwaukee, Wisconsin, as well as the beautiful and hustling Chicago, Illinois.</p>
+        </div>
+    </div>
+    
+    <div class="projectwrapper">
+    	<div class="projectimg"> <a href="europe.php.html"><img src="images/projecticons/paris-clip.jpg" alt="london eye" width="350" height="150" border="0"/></a>
+        <p class="viewpics"><a href="http://brannonworks.com/europe.html">photo gallery</a></p>
+  </div>    
+        <div class="description">	
+            <p class="projtitle"><a href="europe.php.html">Europe</a></p>
+            <p class="infotext">Europe is host to many beautiful places, buildings, and people. I was fortunate enough  to spend a summer studying abroad with a few friends from our school's Architecture program. Being in this country provided endless opportunities for exploration, memory making, and most importantly, career advancement.
+<br/>
+<br/>This set includes photographs from Paris, London, Normandy (Mont Saint-Michel, and the beaches), Venice, Brittany(Saint-Malo), and a few others.</p>
+        </div>
+    </div>
+    
+    <div class="projectwrapper">
+    	<div class="projectimg"> <a href="toronto.php.html"><img src="images/projecticons/toronto-clip.jpg" alt="toronto union station canada" width="350" height="150" border="0"/></a>
+        <p class="viewpics"><a href="http://brannonworks.com/toronto.html">photo gallery</a></p>
+  </div>    
+        <div class="description">	
+            <p class="projtitle"><a href="toronto.php.html">Toronto, Ontario</a></p>
+            <p class="infotext">Over the past few years, I have been privileged enough to spend the New Year holiday with the entire nation of Architecture students. Every year the American Institute of Architecture Students (<a href="http://www.aias.org" target="_blank">AIAS</a>) hosts an architectural FORUM. This annual gathering of like minds takes place in different cities around the nation (including Canada, Puerto Rico and a few others), and provides many opportunities for networking, career advancement, and city exploration.<br/><br/>
+Toronto proved to be a beautiful, clean, and energetic city. Its Midwest feel, coupled with its towering structures and inexpensive sushi proved to be an unforgettable week.</p>
+        </div>
+    </div>
+    
+   
+    <h1 class="indextitle">Don't worry, more photos are always in the works...</h1>
+</div>
+
+<div id="footer">
+	<a href="http://brannonworks.com/index.html">home</a> | <a href="http://brannonworks.com/arch.html">architecture</a> | <a href="http://brannonworks.com/photo.html">photography</a> | <a href="http://brannonworks.com/about.html">about</a> | <a href="http://www.brannonworks.com/blog/index.php" target="_blank">blog</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy;BrannonWorks 2010
+</div>
+
+</body>
+</html>
