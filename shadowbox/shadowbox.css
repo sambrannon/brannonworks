@@ -61,7 +61,7 @@
 	text-align:center;
 }
 #sb-loading-inner span{
-	background:url(loading.gif) no-repeat;
+	background:url("loading.gif") no-repeat;
 	padding-left:34px;
 	display:inline-block;
 }
@@ -104,19 +104,19 @@
 	background-repeat:no-repeat;
 }
 #sb-nav-close{
-	background-image:url(close.png);
+	background-image:url("close.png");
 }
 #sb-nav-next{
-	background-image:url(next.png);
+	background-image:url("next.png");
 }
 #sb-nav-previous{
-	background-image:url(previous.png);
+	background-image:url("previous.png");
 }
 #sb-nav-play{
-	background-image:url(play.png);
+	background-image:url("play.png");
 }
 #sb-nav-pause{
-	background-image:url(pause.png);
+	background-image:url("pause.png");
 }
 #sb-counter{
 	float:left;width:45%;

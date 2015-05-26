@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BrannonWorks</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/brannonworksicon.png"/>
+<meta name="description" content="Brannonworks is a collection of work created by Sam Brannon"/>
+<meta name="keywords" content="architecture, photography, microcosm, brannon, scale, wall, uwm, sarup, paris, toronto, milwaukee, chicago"/>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="shadowbox/shadowbox.css">
+<script type="text/javascript" src="shadowbox/shadowbox.js"></script>
+<script type="text/javascript" src="shadowbox/shadowboxconfig.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19739952-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow A.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow A:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow A:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    //var $sibs  = $active.siblings();
+    //var rndNum = Math.floor(Math.random() * $sibs.length );
+    //var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 400, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+<style type="text/css">/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:460px;
+	width:100%;
+}
+
+#slideshow A {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow A.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow A.last-active {
+    z-index:9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="headerexpand">
+	<div id="header"> 
+    	<div id="logo">
+        	<a href="index.php.html"><img src="images/logo3.png" width="187" height="40" border="0" alt="brannonworks logo"/></a>
+    </div>
+        <ul id="navlist">
+            <li> <a href="arch.php.html">architecture</a></li>
+            <li> <a href="photo.php.html">photography</a></li>
+            <li><a href="webdesign.php.html">web design</a></li>
+            <!--<li><a href="http://www.brannonworks.com/blog/index.php" target="_blank">blog</a></li>-->
+            <li id="buttonlast"><a href="about.php.html">about</a></li>
+        </ul>
+    </div>
+</div>
+<div style="clear:both;height:60px;"><!-- to offset the fixed navigation --></div>
+<div id="contentwrapper">
+	
+	<p class="titlesub">Midwest</p>
+    <a class="back" href="photo.php.html">&laquo; back</a>
+    
+    <a href="images/midwest/midwest001.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest001.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest002.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest002.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest003.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest003.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest004.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest004.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest005.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest005.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest006.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest006.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest007.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest007.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest008.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest008.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest009.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest009.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest010.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest010.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest011.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest011.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest012.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest012.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest013.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest013.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest014.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest014.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest015.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest015.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest016.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest016.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest017.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest017.jpg" alt="thumbnail image" /></a>
+    <!--<a href="images/midwest/midwest018.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest018.jpg" alt="thumbnail image" /></a>-->
+    <a href="images/midwest/midwest019.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest019.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest020.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest020.jpg" alt="thumbnail image" /></a>
+    <!--<a href="images/midwest/midwest021.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest021.jpg" alt="thumbnail image" /></a>-->
+    <a href="images/midwest/midwest022.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest022.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest023.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest023.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest024.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest024.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest025.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest025.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest026.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest026.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest027.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest027.jpg" alt="thumbnail image" /></a>
+    <!--<a href="images/midwest/midwest028.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest028.jpg" alt="thumbnail image" /></a>-->
+    <a href="images/midwest/midwest029.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest029.jpg" alt="thumbnail image" /></a>
+    <!--<a href="images/midwest/midwest030.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest030.jpg" alt="thumbnail image" /></a>-->
+    <a href="images/midwest/midwest031.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest031.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest032.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest032.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest033.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest033.jpg" alt="thumbnail image" /></a>
+    <a href="images/midwest/midwest034.jpg" rel="shadowbox[midwest]"><img class="thumb" src="images/midwest/thumbs/midwest034.jpg" alt="thumbnail image" /></a>
+    
+    <a class="back" href="photo.php.html">&laquo; back</a>
+    
+    
+</div>
+
+<div id="footer">
+	<a href="http://brannonworks.com/index.html">home</a> | <a href="http://brannonworks.com/arch.html">architecture</a> | <a href="http://brannonworks.com/photo.html">photography</a> | <a href="http://brannonworks.com/about.html">about</a> | <a href="http://www.brannonworks.com/blog/index.php" target="_blank">blog</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy;BrannonWorks 2010
+</div>
+
+</body>
+</html>
